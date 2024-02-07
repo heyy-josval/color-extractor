@@ -1,8 +1,9 @@
-# React + Vite
+# Color extractor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un pequeño extractor de colors primarios de una imagen
 
-Currently, two official plugins are available:
+A small extractor of primary colors from an image
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Sitio web / Webpage](https://color-extractor-one.vercel.app/)
+
+![alt](/images/screenshot.png)
