@@ -65,7 +65,7 @@ function App() {
   return (
     <>
       <Toaster richColors />
-      <div className="h-screen w-full grid place-items-center" style={{ backgroundColor: bgColor, color: colorMode == "dark" ? "#ffffff" : "#000000" }}>
+      <div className="min-h-screen w-full grid place-items-center py-5" style={{ backgroundColor: bgColor, color: colorMode == "dark" ? "#ffffff" : "#000000" }}>
         <div className="flex flex-col">
           <div className='flex flex-col items-center gap-4'>
             <ColorExtractor src={srcImg} getColors={colors => {
@@ -73,12 +73,13 @@ function App() {
               setBgColor(colors[0])
               setColorMode(lightOrDark(colors[0]));
             }} />
+            <a href="https://josval.vercel.app/" className='font-bold italic text-xl hover:scale-105 transition-all'>@Josval</a>
             <img id="myimage" className='max-w-sm md:max-w-lg max-h-96 rounded-3xl shadow-2xl border-4 border-black' src={srcImg} />
             <input type="file" onChange={onFileSelected} accept="image/png, image/jpeg"
             />
           </div>
           <br />
-          <div>
+          <div className='grid place-items-center'>
             <ul className='grid grid-cols-3 md:grid-cols-6 gap-5'>
               {imgColors.map((color, i) => (
                 <li key={i} className="w-24 h-24 grid place-items-center rounded-3xl hover:scale-110 transition-all cursor-pointer shadow-xl border-4 border-black" style={{ backgroundColor: color, color: lightOrDark(color) == "dark" ? "#ffffff" : "#000000" }} onClick={() => {
